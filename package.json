@@ -1,0 +1,8 @@
+{
+  "name": "ci-cd-learning-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node -e \"const fs=require('fs'); ['index.html','style.css','script.js'].forEach(f=>{if(!fs.existsSync(f)){throw new Error(f+' missing')}}); console.log('Basic checks passed')\""
+  }
+}
