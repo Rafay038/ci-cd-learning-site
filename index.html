@@ -7,12 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <nav class="navbar">
+    <div class="nav-brand">CI CD Site</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container" id="home">
     <h1>My CI CD Learning Site</h1>
     <p>This site is deployed automatically from GitHub.</p>
 
     <button id="changeTextBtn">Click me</button>
     <p id="message">Nothing clicked yet</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About</h2>
+    <p>This section was added from a feature branch to learn pull requests and team workflow.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email example@example.com</p>
   </div>
 
   <script src="script.js"></script>
