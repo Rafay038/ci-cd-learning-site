@@ -51,3 +51,13 @@ button {
   color: white;
   cursor: pointer;
 }
+
+.footer {
+  max-width: 700px;
+  margin: 20px auto 40px auto;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
