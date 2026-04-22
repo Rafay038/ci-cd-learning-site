@@ -11,33 +11,53 @@
     <div class="nav-brand">CI CD Site</div>
     <div class="nav-links">
       <a href="#home">Home</a>
-      <a href="#about">About</a>
+      <a href="#features">Features</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <div class="container" id="home">
-    <h1>My CI CD Learning Site</h1>
-    <p>This site is deployed automatically from GitHub.</p>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Build and deploy websites with confidence</h1>
+      <p>This project helps me learn Git, GitHub, pull requests, CI, CD, and deployment step by step.</p>
+      <button id="heroBtn">Click to test interaction</button>
+      <p id="heroMessage">No action yet</p>
+    </div>
+  </section>
 
-    <button id="changeTextBtn">Click me</button>
-    <p id="message">Nothing clicked yet</p>
-  </div>
+  <section class="features" id="features">
+    <h2>What I am learning</h2>
+    <div class="feature-grid">
+      <div class="card">
+        <h3>Git branches</h3>
+        <p>I can create separate branches and work safely without touching live code.</p>
+      </div>
+      <div class="card">
+        <h3>Pull requests</h3>
+        <p>I can review changes before merging them into the main branch.</p>
+      </div>
+      <div class="card">
+        <h3>Deployment</h3>
+        <p>I can push code and watch GitHub Actions publish the new version online.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="section" id="about">
-    <h2>About</h2>
-    <p>This section was added from a feature branch to learn pull requests and team workflow.</p>
-  </div>
-
-  <div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email example@example.com</p>
-  </div>
-
-  <script src="script.js"></script>
+  <section class="contact" id="contact">
+    <h2>Contact form</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Your name" required>
+      <input type="email" id="email" placeholder="Your email" required>
+      <textarea id="messageInput" placeholder="Write your message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formStatus">Form not submitted yet</p>
+  </section>
 
   <footer class="footer">
-  <p>Built for learning Git, CI CD, and pull requests</p>
-</footer>
+    <p>Made for learning website deployment and team workflow</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
